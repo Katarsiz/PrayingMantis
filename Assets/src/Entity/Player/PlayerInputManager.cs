@@ -108,6 +108,16 @@ public class PlayerInputManager : MonoBehaviour {
             ResetActiveBug();
         }
     }
+
+    public void SetActiveScrollManager(ScrollManager newContainer) {
+        if (!modifiersContainer) {
+            modifiersContainer = newContainer;
+        }
+    }
+
+    public void ResetActiveScrollManager() {
+        modifiersContainer = null;
+    }
     
     public void SetActiveModifier(ModifierWrap m) {
         // Wrap is only set as active if there isn't already an active wrap

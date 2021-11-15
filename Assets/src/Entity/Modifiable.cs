@@ -10,19 +10,13 @@ public abstract class Modifiable : Affectable {
     /// <summary>
     /// Game object containing the object modifiers
     /// </summary>
-    public GameObject modifiersContainer;
-
-    /// <summary>
-    /// Collider activated when the player is hovering over the entity
-    /// </summary>
-    public Collider2D containerCollider;
+    public ScrollManager modifiersContainer;
 
     /// <summary>
     /// Functions called when the mouse is hovered over the entity
     /// </summary>
     public virtual void OnMouseHovered() {
         animator.SetInteger("EffectId",Element.GLOW);
-        containerCollider.enabled = true;
     }
     
     /// <summary>
@@ -30,14 +24,13 @@ public abstract class Modifiable : Affectable {
     /// </summary>
     public virtual void OnMouseExited() {
         animator.SetInteger("EffectId",Element.NONE);
-        containerCollider.enabled = false;
     }
 
     public void ShowModifiers() {
-        modifiersContainer.SetActive(true);
+        modifiersContainer.Show();
     }
     
     public void HideModifiers() {
-        modifiersContainer.SetActive(false);
+        modifiersContainer.TryHide();
     }
 }

@@ -13,6 +13,8 @@ public class ModifierWrap : Image{
     /// </summary>
     private Bug bug;
 
+    public ScrollManager originalContainer;
+
     public void SetBug(Bug b) {
         bug = b;
     }
@@ -34,9 +36,6 @@ public class ModifierWrapEditor : UnityEditor.UI.ImageEditor
         base.OnInspectorGUI();//Draw inspector UI of ImageEditor
         
         SerializedProperty modifierProperty = serializedObject.FindProperty("modifier");
-
-        ModifierWrap wrap = (ModifierWrap)target;
-        //wrap.modifier = EditorGUILayout.PropertyField("Modifier", wrap.modifier);
         EditorGUILayout.PropertyField(modifierProperty, new GUIContent("Modifier"),true);
         serializedObject.ApplyModifiedProperties();
     }

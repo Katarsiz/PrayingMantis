@@ -13,9 +13,12 @@ public class ScrollManager : MonoBehaviour {
 
     private Vector3 _upperContainerBorder;
 
-    private List<RectTransform> _objects;
+    public List<RectTransform> _objects;
 
-    public int count;
+    /// <summary>
+    /// Flag that determines if the scroll manager must be hidden 
+    /// </summary>
+    public int showCount;
 
     private void Start() {
         _objects = new List<RectTransform>();
@@ -24,6 +27,23 @@ public class ScrollManager : MonoBehaviour {
         // Objects already in the container are added as children
         for (int i = 0; i < container.childCount; i++) {
             AddLast(container.GetChild(i).GetComponent<RectTransform>());
+        }
+    }
+
+    public void Show() {
+        gameObject.SetActive(true);
+        showCount++;
+    }
+
+    public void TryHide() {
+        StartCoroutine(TryHide(0.1f));
+    }
+
+    public IEnumerator TryHide(float timeToHide) {
+        showCount--;
+        yield return new WaitForSeconds(timeToHide);
+        if (showCount <= 0) {
+            gameObject.SetActive(false);
         }
     }
 
@@ -38,17 +58,11 @@ public class ScrollManager : MonoBehaviour {
         }
         obj.SetParent(container);
         _objects.Add(obj);
-        count = _objects.Count;
     }
     
     public void Remove(RectTransform obj) {
         int removedObjectIndex = _objects.IndexOf(obj);
         _objects.Remove(obj);
-        count = _objects.Count;
-        // All objects below the removed object are re arranged
-        if (_objects.Count == 0) {
-            return;
-        }
         for (int i = removedObjectIndex; i < _objects.Count; i++) {
             if (i == 0) {
                 _objects[i].transform.position = _upperContainerBorder;
