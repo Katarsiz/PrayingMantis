@@ -24,6 +24,11 @@ public class UIManager : MonoBehaviour {
     public Image gameWorldImage;
 
     /// <summary>
+    /// Game objects that contain the current amount of stars earned in the level
+    /// </summary>
+    public GameObject[] starImages;
+
+    /// <summary>
     /// Time that the initial image takes to dissapear
     /// </summary>
     public float initialFadingTime;
@@ -47,8 +52,6 @@ public class UIManager : MonoBehaviour {
     /// Panel containing slides with an inamge and text for the victory screen
     /// </summary>
     public UIDFadable defeatPanel;
-
-    public String nextSceneName;
 
     public Slider healthSlider;
 
@@ -99,11 +102,10 @@ public class UIManager : MonoBehaviour {
     }
     
     public void LoadScene(String name) {
-        nextSceneName = name;
-        StartCoroutine(LoadNexSceneCor());
+        StartCoroutine(LoadNexSceneCor(name));
     }
 
-    public IEnumerator LoadNexSceneCor() {
+    private IEnumerator LoadNexSceneCor(String nextSceneName) {
         yield return OpaqueFinalImage();
         SceneManager.LoadScene(nextSceneName);
     }

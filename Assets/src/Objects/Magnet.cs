@@ -5,9 +5,18 @@ using UnityEngine;
 
 public class Magnet : Pickable {
 
+    /// <summary>
+    /// Force this magnet attracts items to itself
+    /// </summary>
+    public float magnetism;
+
     public Collider2D magneticCollider;
 
-    private ContactFilter2D _detectionFilter;   
+    private ContactFilter2D _detectionFilter;
+
+    public void SetMagnetism(float newMagnetism) {
+        magnetism = newMagnetism;
+    }
     
     public override void OnPick(Interactor i) {
         base.OnPick(i);
@@ -26,7 +35,7 @@ public class Magnet : Pickable {
             Physics2D.OverlapCollider(magneticCollider, _detectionFilter, results);
             foreach (Collider2D c in results) {
                 Magnetic m = c.GetComponent<Magnetic>();
-                m?.OnAttractionDetected();             
+                m?.OnAttractionDetected(magnetism);             
             }
             yield return new WaitForFixedUpdate();
         }

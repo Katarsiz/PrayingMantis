@@ -15,6 +15,11 @@ public class PlayerInputManager : MonoBehaviour {
     public Canvas mainCanvas;
 
     public ScrollManager modifiersContainer;
+    
+    /// <summary>
+    /// Layer containing modifiable objects
+    /// </summary>
+    public LayerMask modifiablesLayer;
 
     public Camera activeCamera;
 
@@ -51,7 +56,8 @@ public class PlayerInputManager : MonoBehaviour {
         }
         // Get the active modifiable
         RaycastHit2D hit = Physics2D.Raycast(new Vector2(activeCamera.ScreenToWorldPoint(Input.mousePosition).x,
-            activeCamera.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
+            activeCamera.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f, modifiablesLayer);
+        Debug.Log(hit.collider);
         if (!_levelManager.simulationRunning && hit.collider) {
             if (hit.collider.TryGetComponent(out Modifiable modifiable)) {
                 // Modifiable hovered object is updated

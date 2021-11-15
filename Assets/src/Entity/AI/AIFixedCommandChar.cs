@@ -45,15 +45,6 @@ public class AIFixedCommandChar : MainCharacter {
     }
     
     /// <summary>
-    /// Functions called when the mouse is hovered over the entity
-    /// </summary>
-    public override void OnMouseHovered() {
-        base.OnMouseHovered();
-        // Deactivates the interactor collider, so it doesn't hinder the main colliders
-        interactor.GetComponent<Collider2D>().enabled = false;
-    }
-    
-    /// <summary>
     /// Functions called when the mouse has stopped being hovered over the entity
     /// </summary>
     public override void OnMouseExited() {

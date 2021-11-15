@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour {
     
     public PlayerInputManager playerInputManager;
 
-    public String nextScene;
+    public String nextSceneName;
 
     private String _currentScene;
 
@@ -39,22 +39,22 @@ public class LevelManager : MonoBehaviour {
         mainCharacter.Initialize(this);
         PauseSimulation();
     }
+    
+    public void LoadNextScene() {
+        StartCoroutine(LoadScene());
+    }
 
-    public IEnumerator LoadScene(int newScene) {
+    public IEnumerator LoadScene() {
         if (!_sceneTransitionTriggered) {
             _sceneTransitionTriggered = true;
             yield return uiManager.OpaqueFinalImage();
-            SceneManager.LoadScene(newScene);
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 
     public void OnHealthChange() {
         float healthFraction = (float)mainCharacter.health / mainCharacter.maxHealth;
         uiManager.UpdateHealth(healthFraction);
-    }
-
-    public void SetAndLoadScene(int sceneIndex) {
-        StartCoroutine(LoadScene(sceneIndex));
     }
 
     public void ReloadCurrentScene() {
@@ -75,18 +75,25 @@ public class LevelManager : MonoBehaviour {
         StartCoroutine(ShowLevelLostInterface());
     }
     
-    public void OnLevelCompleted() {
-        phaseToLoad = 0;
+    public void OnLevelWon() {
         StartCoroutine(ShowLevelCompletionInterface());
+    }
+    
+    public void OnLevelCompleted() {
+        PauseSimulation();
+        phaseToLoad = 0;
+        if (mainCharacter.health < 3) {
+            OnLevelWon();
+        } else {
+            OnLevelLost();
+        }
     }
 
     public IEnumerator ShowLevelCompletionInterface() {
-        yield return uiManager.OpaqueGameWorldImage();
         yield return uiManager.ShowVictoryPanel();
     }
     
     public IEnumerator ShowLevelLostInterface() {
-        yield return uiManager.OpaqueGameWorldImage();
         yield return uiManager.ShowDefeatPanel();
     }
 }

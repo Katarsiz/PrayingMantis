@@ -6,16 +6,16 @@ using UnityEngine;
 public class LooseSpikes : MonoBehaviour, Magnetic {
     
     public int damage;
-
-    /// <summary>
-    /// Time after which a damage zone can attack an entity once again
-    /// </summary>
-    public float damageCooldown;
     
     /// <summary>
     /// Speed at which spikes will move once detached
     /// </summary>
     public float speed;
+    
+    /// <summary>
+    /// Location the damaged entity teleports to when taking damaged
+    /// </summary>
+    public Transform teleportLocation;
 
     /// <summary>
     /// Direction the spikes will follow once loosen
@@ -52,7 +52,8 @@ public class LooseSpikes : MonoBehaviour, Magnetic {
         }
     }
 
-    public void OnAttractionDetected() {
+    public void OnAttractionDetected(float magneticForce) {
+        speed = magneticForce;
         Detach();
     }
     
@@ -60,6 +61,7 @@ public class LooseSpikes : MonoBehaviour, Magnetic {
         Affectable a = other.GetComponent<Affectable>();
         if (a) {
             _damageEffect.Apply(a);
+            a.gameObject.transform.position = teleportLocation.position;
             Destroy(gameObject);
         }
     }

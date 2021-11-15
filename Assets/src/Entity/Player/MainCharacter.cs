@@ -35,17 +35,11 @@ public class MainCharacter : Modifiable {
         _mAnim.SetBool("Holding", false);
     }
 
-    void OnJump() {
-    }
-    
-    void OnAttack() {
-    }
-
     /// <summary>
     /// Freezes the player and plays the death screens
     /// </summary>
     public override void OnDeath() {
-        levelManager.ReloadCurrentScene();
+        levelManager.OnLevelCompleted();
     }
 
     public override void OnHeal() {

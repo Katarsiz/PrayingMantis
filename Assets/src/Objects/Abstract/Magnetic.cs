@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface Magnetic {
 
-    void OnAttractionDetected();
+    void OnAttractionDetected(float magneticForce);
 }

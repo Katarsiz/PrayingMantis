@@ -12,6 +12,11 @@ public class DamageZone : MonoBehaviour {
     /// </summary>
     public float damageCooldown;
 
+    /// <summary>
+    /// Location the damaged entity teleports to when taking damaged
+    /// </summary>
+    public Transform teleportLocation;
+
     protected DamageEffect _damageEffect;
 
     /// <summary>
@@ -28,6 +33,7 @@ public class DamageZone : MonoBehaviour {
         Affectable a = other.GetComponent<Affectable>();
         if (a && !_entityCooldowns.Contains(a)) {
             _damageEffect.Apply(a);
+            a.gameObject.transform.position = teleportLocation.position;
             StartCoroutine(CooldownAffectable(damageCooldown, a));
         }
     }

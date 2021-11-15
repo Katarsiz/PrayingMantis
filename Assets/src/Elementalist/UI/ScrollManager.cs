@@ -15,6 +15,8 @@ public class ScrollManager : MonoBehaviour {
 
     public List<RectTransform> _objects;
 
+    
+
     /// <summary>
     /// Flag that determines if the scroll manager must be hidden 
     /// </summary>
