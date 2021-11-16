@@ -59,6 +59,10 @@ public class UIManager : MonoBehaviour {
         Task fadeTask = VanishInitialImage();
     }
 
+    public void RestartLevel() {
+        LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     /// <summary>
     /// Updates the health shown in the player UI
     /// </summary>

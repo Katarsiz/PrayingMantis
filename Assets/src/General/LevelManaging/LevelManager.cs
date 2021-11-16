@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +17,10 @@ public class LevelManager : MonoBehaviour {
     private UIManager uiManager;
     
     public PlayerInputManager playerInputManager;
+    
+    public CinemachineVirtualCamera freeLookCMVC;
+
+    public CinemachineVirtualCamera mainCharacterCMVC;
 
     public String nextSceneName;
 
@@ -62,11 +68,15 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void PauseSimulation() {
+        mainCharacterCMVC.gameObject.SetActive(false);
+        freeLookCMVC.gameObject.SetActive(true);
         simulationRunning = false;
         mainCharacter.FreezeMovement();
     }
 
     public void ResumeSimulation() {
+        mainCharacterCMVC.gameObject.SetActive(true);
+        freeLookCMVC.gameObject.SetActive(false);
         simulationRunning = true;
         mainCharacter.UnFreezeMovement();
     }

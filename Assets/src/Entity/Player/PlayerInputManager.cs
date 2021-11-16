@@ -1,4 +1,5 @@
 ﻿using System;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -22,6 +23,13 @@ public class PlayerInputManager : MonoBehaviour {
     public LayerMask modifiablesLayer;
 
     public Camera activeCamera;
+    
+    public CinemachineVirtualCamera freeLookCMVC;
+    
+    /// <summary>
+    /// Speed at which the camera pans when getting near the camera borders
+    /// </summary>
+    public float panSpeed;
 
     private Modifiable _hoveredModifiableObject;
 
@@ -29,8 +37,13 @@ public class PlayerInputManager : MonoBehaviour {
     
     private bool _wrapFollowsMouse;
 
+    private Vector2 _panDirection;
+
+    private Transform _cameraTransform;
+
     public void Initialize(LevelManager manager) {
         _levelManager = manager;
+        _cameraTransform = freeLookCMVC.transform;
     }
 
     /// <summary>
@@ -57,7 +70,6 @@ public class PlayerInputManager : MonoBehaviour {
         // Get the active modifiable
         RaycastHit2D hit = Physics2D.Raycast(new Vector2(activeCamera.ScreenToWorldPoint(Input.mousePosition).x,
             activeCamera.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f, modifiablesLayer);
-        Debug.Log(hit.collider);
         if (!_levelManager.simulationRunning && hit.collider) {
             if (hit.collider.TryGetComponent(out Modifiable modifiable)) {
                 // Modifiable hovered object is updated
@@ -81,9 +93,32 @@ public class PlayerInputManager : MonoBehaviour {
                 _hoveredModifiableObject = null;
             }
         }
-
-        if (!_hoveredModifiableObject) {
+        
+        // Move the camera if too close to border, only use the free look if the
+        if (!_levelManager.simulationRunning) {
+            _panDirection = PanDirection(Input.mousePosition.x, Input.mousePosition.y);
+            freeLookCMVC.transform.position = Vector3.Lerp(_cameraTransform.position,
+                _cameraTransform.position + (Vector3)_panDirection * panSpeed,
+                0.1f);
+            
         }
+    }
+
+    public Vector2 PanDirection(float x, float y) {
+        Vector2 result = Vector2.zero;
+        if (y >= Screen.height * 0.95) {
+            result.y = 1;
+        }
+        else if (y < Screen.height * 0.05f) {
+            result.y = -1;
+        }
+        if (x >= Screen.width * 0.95) {
+            result.x = 1;
+        }
+        else if (x < Screen.width * 0.05f) {
+            result.x = -1;
+        }
+        return result;
     }
     
     /// <summary>

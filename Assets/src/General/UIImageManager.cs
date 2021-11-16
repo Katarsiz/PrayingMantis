@@ -18,12 +18,13 @@ public class UIImageManager : MonoBehaviour {
     }
     
     public static async Task InterpolateUImageColor(Image i, Color targetColor, float interpolationTime) {
+        float deltaColor = 0.03f;
         Color initialColor = i.color;
         float currentTime = 0;
         while (currentTime<interpolationTime) {
-            currentTime += 0.1f;
+            currentTime += deltaColor;
             i.color = Color.Lerp(initialColor, targetColor, currentTime / interpolationTime);
-            await Task.Delay(Mathf.RoundToInt(0.1f * 1000));
+            await Task.Delay(Mathf.RoundToInt(deltaColor * 1000));
         }
     }
     
