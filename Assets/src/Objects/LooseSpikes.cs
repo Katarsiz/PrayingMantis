@@ -11,11 +11,6 @@ public class LooseSpikes : MonoBehaviour, Magnetic {
     /// Speed at which spikes will move once detached
     /// </summary>
     public float speed;
-    
-    /// <summary>
-    /// Location the damaged entity teleports to when taking damaged
-    /// </summary>
-    public Transform teleportLocation;
 
     /// <summary>
     /// Direction the spikes will follow once loosen
@@ -61,7 +56,6 @@ public class LooseSpikes : MonoBehaviour, Magnetic {
         Affectable a = other.GetComponent<Affectable>();
         if (a) {
             _damageEffect.Apply(a);
-            a.gameObject.transform.position = teleportLocation.position;
             Destroy(gameObject);
         }
     }

@@ -21,14 +21,25 @@ public class AIFixedCommandChar : MainCharacter {
     
     public bool jumping;
 
+    public MainCharacterModifiable modifiable;
+
+    /// <summary>
+    /// The current bug that will be corrected once the player takes damage
+    /// </summary>
+    public Bug currentBug;
+
     void Start() {
         base.Start();
         Command [] commandsArray = GetComponentsInChildren<Command>();
         if (commandsArray != null) {
             commands = commandsArray.ToList();
         }
-        _platformerController = GetComponent<PlatformerCharacter2D>();
         StartCoroutine(ExecuteAllCommands());
+        modifiable = GetComponent<MainCharacterModifiable>();
+        // Platformer controller construction
+        _platformerController = GetComponent<PlatformerCharacter2D>();
+        _platformerController.jumpBug = modifiable.GetJumpBug();
+        currentBug = _platformerController.jumpBug;
     }
     
     void Update() {
@@ -43,18 +54,14 @@ public class AIFixedCommandChar : MainCharacter {
             interactor.TryInteract();
         }
     }
-    
-    /// <summary>
-    /// Functions called when the mouse has stopped being hovered over the entity
-    /// </summary>
-    public override void OnMouseExited() {
-        base.OnMouseExited();
-        // Activates the interactor collider
-        interactor.GetComponent<Collider2D>().enabled = true;
-    }
 
     private void FixedUpdate() {
         _platformerController.Move(xMove,yMove,crouching,jumping);
+    }
+    
+    public override void OnDamageTaken() {
+        currentBug.Correct();
+        levelManager.OnHealthChange();
     }
 
     public bool FallDetected() {

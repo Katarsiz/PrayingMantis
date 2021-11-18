@@ -44,9 +44,11 @@ public abstract class Movable : Damageable {
     /// </summary>
     /// <param name="position"></param>
     /// <returns> Id that tells if the entity teleported successfully or not</returns>
-    public int TeleportTo(Vector3 position) {
+    public virtual int TeleportTo(Vector3 position) {
+        controller.Freeze();
         // Complete
         transform.position = position;
+        controller.Unfreeze();
         return 0;
     }
 }

@@ -5,25 +5,37 @@ using UnityEngine;
 /// <summary>
 /// Class that contains entities capable of being affected by buggs
 /// </summary>
-public abstract class Modifiable : Affectable {
+public class Modifiable : MonoBehaviour {
 
     /// <summary>
     /// Game object containing the object modifiers
     /// </summary>
     public ScrollManager modifiersContainer;
 
+    public Animator animator;
+
+    /// <summary>
+    /// Bugs this entity can be affected by. Logic components request bugs from the modifiable and assign them to
+    /// their corresponding components that need them
+    /// </summary>
+    public Bug[] bugs;
+
     /// <summary>
     /// Functions called when the mouse is hovered over the entity
     /// </summary>
     public virtual void OnMouseHovered() {
-        animator.SetInteger("EffectId",Element.GLOW);
+        if (animator) {
+            animator.SetInteger("EffectId",Element.GLOW);
+        }
     }
     
     /// <summary>
     /// Functions called when the mouse has stopped being hovered over the entity
     /// </summary>
     public virtual void OnMouseExited() {
-        animator.SetInteger("EffectId",Element.NONE);
+        if (animator) {
+            animator.SetInteger("EffectId",Element.NONE);
+        }
     }
 
     public void ShowModifiers() {

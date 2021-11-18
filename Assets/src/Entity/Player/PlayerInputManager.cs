@@ -15,7 +15,7 @@ public class PlayerInputManager : MonoBehaviour {
     /// </summary>
     public Canvas mainCanvas;
 
-    public ScrollManager modifiersContainer;
+    public ScrollManager activeContainer;
     
     /// <summary>
     /// Layer containing modifiable objects
@@ -64,7 +64,7 @@ public class PlayerInputManager : MonoBehaviour {
             }
             
             if (Input.GetMouseButtonDown(1)) {
-                OnRMBDown();
+                OnRMBUp();
             }
         }
         // Get the active modifiable
@@ -106,16 +106,16 @@ public class PlayerInputManager : MonoBehaviour {
 
     public Vector2 PanDirection(float x, float y) {
         Vector2 result = Vector2.zero;
-        if (y >= Screen.height * 0.95) {
+        if (Input.GetKey(KeyCode.W)) {
             result.y = 1;
         }
-        else if (y < Screen.height * 0.05f) {
+        else if (Input.GetKey(KeyCode.S)) {
             result.y = -1;
         }
-        if (x >= Screen.width * 0.95) {
+        if (Input.GetKey(KeyCode.D)) {
             result.x = 1;
         }
-        else if (x < Screen.width * 0.05f) {
+        else if (Input.GetKey(KeyCode.A)) {
             result.x = -1;
         }
         return result;
@@ -151,13 +151,13 @@ public class PlayerInputManager : MonoBehaviour {
     }
 
     public void SetActiveScrollManager(ScrollManager newContainer) {
-        if (!modifiersContainer) {
-            modifiersContainer = newContainer;
+        if (!activeContainer) {
+            activeContainer = newContainer;
         }
     }
 
     public void ResetActiveScrollManager() {
-        modifiersContainer = null;
+        activeContainer = null;
     }
     
     public void SetActiveModifier(ModifierWrap m) {
@@ -190,7 +190,7 @@ public class PlayerInputManager : MonoBehaviour {
                 activeBug.AddModifierWrap(activeModifierWrap);
             }
             else {
-                modifiersContainer.AddLast(activeModifierWrap.rectTransform);
+                activeModifierWrap.originalContainer.AddLast(activeModifierWrap.rectTransform);
             }
             ResetActiveModifierWrap();
         }
@@ -201,24 +201,19 @@ public class PlayerInputManager : MonoBehaviour {
         if (activeModifierWrap) {
             activeModifierWrap.transform.SetParent(mainCanvas.transform);
             activeModifierWrap.transform.SetSiblingIndex(0);
-            modifiersContainer.Remove(activeModifierWrap.rectTransform);
+            activeContainer.Remove(activeModifierWrap.rectTransform);
             _wrapFollowsMouse = true;
-        }
-        // Show modifiers of the object that is being examined only if simulation is not active
-        if (_hoveredModifiableObject) {
-            //_hoveredModifiableObject.ShowModifiers();
         }
     }
     
-    public void OnRMBDown() {
+    public void OnRMBUp() {
         // Tries to remove the wrap from the bug
         if (activeModifierWrap) {
             Bug b = activeModifierWrap.GetBug();
             if (b) {
                 b.TryRemoveModifierWrap(activeModifierWrap);
-                modifiersContainer.AddLast(activeModifierWrap.rectTransform);
             }
+            ResetActiveModifierWrap();
         }
     }
-
 }

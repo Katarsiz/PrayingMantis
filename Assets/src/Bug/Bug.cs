@@ -46,16 +46,28 @@ public class Bug : MonoBehaviour {
         containerAnimator.SetBool("ShowModifiers",false);
     }
 
+    public void Correct() {
+        // Deletes the first modifier wrap in the bug, if it exists
+        if (modifiers.Count > 0) {
+            RemoveModifierWrap(0);
+        }
+    }
+
     public void RemoveModifierWrap(ModifierWrap modifierWrap) {
         scrollManager.Remove(modifierWrap.rectTransform);
         modifiers.Remove(modifierWrap);
         modifierWrap.SetBug(null);
+        modifierWrap.originalContainer.AddLast(modifierWrap.rectTransform);
         containerAnimator.SetInteger("ModifierCount",modifiers.Count);
+    }
+    
+    public void RemoveModifierWrap(int index) {
+        RemoveModifierWrap(modifiers[index]);
     }
 
     public void ApplyAllModifiers() {
         foreach (ModifierWrap wrap in modifiers) {
-            StartCoroutine(ApplyModifier(wrap.modifier));
+            StartCoroutine(ApplyModifier(wrap.applyModifier));
         }
     }
 

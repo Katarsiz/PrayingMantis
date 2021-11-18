@@ -11,21 +11,17 @@ public class ScrollManager : MonoBehaviour {
     /// <returns></returns>
     public RectTransform container;
 
-    private Vector3 _upperContainerBorder;
 
     public List<RectTransform> _objects;
-
-    
 
     /// <summary>
     /// Flag that determines if the scroll manager must be hidden 
     /// </summary>
     public int showCount;
 
-    private void Start() {
+    protected virtual void Start() {
         _objects = new List<RectTransform>();
-        _upperContainerBorder = container.position;
-        _upperContainerBorder += Vector3.up * container.rect.yMax;
+        
         // Objects already in the container are added as children
         for (int i = 0; i < container.childCount; i++) {
             AddLast(container.GetChild(i).GetComponent<RectTransform>());
@@ -55,6 +51,8 @@ public class ScrollManager : MonoBehaviour {
             PlaceBelow(obj, _objects[_objects.Count-1]);
         }
         else {
+            Debug.Log("Adding Below container border");
+            Vector3 _upperContainerBorder = container.position + Vector3.up * container.rect.yMax;
             obj.transform.position = _upperContainerBorder;
             obj.anchoredPosition += Vector2.Scale(Vector2.down + Vector2.right, obj.rect.size)/2f;
         }
@@ -67,6 +65,7 @@ public class ScrollManager : MonoBehaviour {
         _objects.Remove(obj);
         for (int i = removedObjectIndex; i < _objects.Count; i++) {
             if (i == 0) {
+                Vector3 _upperContainerBorder = container.position + Vector3.up * container.rect.yMax;
                 _objects[i].transform.position = _upperContainerBorder;
                 _objects[i].anchoredPosition += Vector2.Scale(Vector2.down + Vector2.right, obj.rect.size)/2f;
             }

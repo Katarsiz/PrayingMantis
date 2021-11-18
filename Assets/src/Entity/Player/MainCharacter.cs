@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
 
-public class MainCharacter : Modifiable {
+public class MainCharacter : Affectable {
     
     // Object the player uses to interact with environment objects
     public Interactor interactor;
@@ -44,9 +44,5 @@ public class MainCharacter : Modifiable {
 
     public override void OnHeal() {
         throw new NotImplementedException();
-    }
-
-    public override void OnDamageTaken() {
-        levelManager.OnHealthChange();
     }
 }

@@ -6,7 +6,15 @@ using UnityEngine.UI;
 
 public class ModifierWrap : Image{
 
-    public Modifier modifier;
+    /// <summary>
+    /// Modifier applied by the bug
+    /// </summary>
+    public Modifier applyModifier;
+    
+    /// <summary>
+    /// ;Modifier applied when the bug is corrected
+    /// </summary>
+    public Modifier resetModifier;
 
     /// <summary>
     /// The bug this modifier has been associated to
@@ -16,6 +24,7 @@ public class ModifierWrap : Image{
     public ScrollManager originalContainer;
 
     public void SetBug(Bug b) {
+        Debug.Log(b);
         bug = b;
     }
 
@@ -35,8 +44,10 @@ public class ModifierWrapEditor : UnityEditor.UI.ImageEditor
     {
         base.OnInspectorGUI();//Draw inspector UI of ImageEditor
         
-        SerializedProperty modifierProperty = serializedObject.FindProperty("modifier");
-        EditorGUILayout.PropertyField(modifierProperty, new GUIContent("Modifier"),true);
+        SerializedProperty applyModifierProperty = serializedObject.FindProperty("applyModifier");
+        SerializedProperty resetModifierProperty = serializedObject.FindProperty("applyModifier");
+        EditorGUILayout.PropertyField(applyModifierProperty, new GUIContent("Apply Modifier"),true);
+        EditorGUILayout.PropertyField(resetModifierProperty, new GUIContent("Reset Modifier"),true);
         serializedObject.ApplyModifiedProperties();
     }
 }

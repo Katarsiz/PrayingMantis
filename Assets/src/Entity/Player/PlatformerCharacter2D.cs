@@ -286,6 +286,14 @@ public class PlatformerCharacter2D : GroundedController {
         public void SetGravity(float g) {
             rb.gravityScale = g;
         }
+        
+        /// <summary>
+        /// Increases the gravity by n
+        /// </summary>
+        /// <param name="n"></param>
+        public void IncreaseGravity(float n) {
+            rb.gravityScale += n;
+        }
 
         public override void Freeze() {
             rb.bodyType = RigidbodyType2D.Static;
