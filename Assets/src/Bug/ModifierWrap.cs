@@ -24,7 +24,6 @@ public class ModifierWrap : Image{
     public ScrollManager originalContainer;
 
     public void SetBug(Bug b) {
-        Debug.Log(b);
         bug = b;
     }
 
@@ -45,7 +44,7 @@ public class ModifierWrapEditor : UnityEditor.UI.ImageEditor
         base.OnInspectorGUI();//Draw inspector UI of ImageEditor
         
         SerializedProperty applyModifierProperty = serializedObject.FindProperty("applyModifier");
-        SerializedProperty resetModifierProperty = serializedObject.FindProperty("applyModifier");
+        SerializedProperty resetModifierProperty = serializedObject.FindProperty("resetModifier");
         EditorGUILayout.PropertyField(applyModifierProperty, new GUIContent("Apply Modifier"),true);
         EditorGUILayout.PropertyField(resetModifierProperty, new GUIContent("Reset Modifier"),true);
         serializedObject.ApplyModifiedProperties();

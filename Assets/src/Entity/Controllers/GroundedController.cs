@@ -27,12 +27,8 @@ public class GroundedController : MovingController {
     protected virtual void CheckGrounded() {
         _grounded = false;
         if (Physics2D.OverlapCircle(m_GroundCheck.position, groundedRadius, m_WhatIsGround)) {
-            OnGrounded();
+            _grounded = true;
         }
-    }
-
-    protected virtual void OnGrounded() {
-        _grounded = true;
     }
     
     public bool FallDetected() {

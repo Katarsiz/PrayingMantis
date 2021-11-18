@@ -24,9 +24,9 @@ public class AIFixedCommandChar : MainCharacter {
     public MainCharacterModifiable modifiable;
 
     /// <summary>
-    /// The current bug that will be corrected once the player takes damage
+    /// Manager containing all the bugs
     /// </summary>
-    public Bug currentBug;
+    public BugManager bugManager;
 
     void Start() {
         base.Start();
@@ -39,15 +39,12 @@ public class AIFixedCommandChar : MainCharacter {
         // Platformer controller construction
         _platformerController = GetComponent<PlatformerCharacter2D>();
         _platformerController.jumpBug = modifiable.GetJumpBug();
-        currentBug = _platformerController.jumpBug;
     }
     
     void Update() {
         if (ObstacleDetected()) {
             xMove *= -1;
             controller.Flip();
-        } else if (FallDetected()) {
-            StartCoroutine(OneShotJump());
         }
         // Picks any interactable object if it is in range
         if (interactor.lastInteractableObject) {
@@ -56,11 +53,14 @@ public class AIFixedCommandChar : MainCharacter {
     }
 
     private void FixedUpdate() {
+        if (FallDetected()) {
+            StartCoroutine(OneShotJump());
+        }
         _platformerController.Move(xMove,yMove,crouching,jumping);
     }
     
     public override void OnDamageTaken() {
-        currentBug.Correct();
+        bugManager.Correct();
         levelManager.OnHealthChange();
     }
 

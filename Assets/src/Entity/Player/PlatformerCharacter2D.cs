@@ -186,7 +186,6 @@ public class PlatformerCharacter2D : GroundedController {
             // Climb collider is used to check if player is able to climb
             List<Collider2D> results = new List<Collider2D>();
             Physics2D.OverlapCollider(climbCollider, climbFilter, results);
-            results.ForEach(x=>Debug.Log(x));
             if (results.Count>0) {
                 // First, a raycast to up the player is tried
                 RaycastHit2D verticalHit = Physics2D.Raycast(transform.position, transform.up, 

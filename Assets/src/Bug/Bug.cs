@@ -46,11 +46,18 @@ public class Bug : MonoBehaviour {
         containerAnimator.SetBool("ShowModifiers",false);
     }
 
-    public void Correct() {
+    /// <summary>
+    /// Attempts to correct the bug
+    /// </summary>
+    /// <returns> If the bug was successfully corrected </returns>
+    public bool Correct() {
         // Deletes the first modifier wrap in the bug, if it exists
         if (modifiers.Count > 0) {
+            ResetAllModifiers();
             RemoveModifierWrap(0);
+            return true;
         }
+        return false;
     }
 
     public void RemoveModifierWrap(ModifierWrap modifierWrap) {
@@ -68,6 +75,12 @@ public class Bug : MonoBehaviour {
     public void ApplyAllModifiers() {
         foreach (ModifierWrap wrap in modifiers) {
             StartCoroutine(ApplyModifier(wrap.applyModifier));
+        }
+    }
+    
+    public void ResetAllModifiers() {
+        foreach (ModifierWrap wrap in modifiers) {
+            StartCoroutine(ApplyModifier(wrap.resetModifier));
         }
     }
 

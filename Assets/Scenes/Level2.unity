@@ -36789,7 +36789,18 @@ MonoBehaviour:
     applyTime: 0
     action:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 6363890526059060386}
+          m_MethodName: SetGravity
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   originalContainer: {fileID: 0}
 --- !u!114 &2025531265
 MonoBehaviour:
@@ -36974,7 +36985,18 @@ MonoBehaviour:
     applyTime: 0
     action:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2051851783}
+          m_MethodName: SetMagnetism
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   originalContainer: {fileID: 0}
 --- !u!114 &2039086097
 MonoBehaviour:
@@ -37284,7 +37306,7 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
   applyModifier:
-    applyTime: 0.5
+    applyTime: 0
     action:
       m_PersistentCalls:
         m_Calls:
@@ -37303,7 +37325,18 @@ MonoBehaviour:
     applyTime: 0
     action:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 6363890526059060386}
+          m_MethodName: SetGravity
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   originalContainer: {fileID: 0}
 --- !u!114 &2070668268
 MonoBehaviour:
@@ -38010,7 +38043,6 @@ GameObject:
   - component: {fileID: 6363890526059060391}
   - component: {fileID: 6363890526059060386}
   - component: {fileID: 6363890526059060394}
-  - component: {fileID: 6363890526059060393}
   - component: {fileID: 6363890526059060390}
   - component: {fileID: 6363890526059060392}
   m_Layer: 8
@@ -38060,7 +38092,9 @@ MonoBehaviour:
   crouching: 0
   jumping: 0
   modifiable: {fileID: 0}
-  activeBug: {fileID: 0}
+  bugManager:
+    bugs:
+    - {fileID: 367435679}
 --- !u!61 &6363890526059060392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38087,22 +38121,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5886936, y: 3.7458038}
   m_EdgeRadius: 0
---- !u!114 &6363890526059060393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6363890526059060389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f406bed7c5c272f4a9dc908fc48c25c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modifiersContainer: {fileID: 759504932}
-  animator: {fileID: 1506631699}
-  bugs:
-  - {fileID: 367435679}
 --- !u!114 &6363890526059060394
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -51,7 +51,6 @@ public class ScrollManager : MonoBehaviour {
             PlaceBelow(obj, _objects[_objects.Count-1]);
         }
         else {
-            Debug.Log("Adding Below container border");
             Vector3 _upperContainerBorder = container.position + Vector3.up * container.rect.yMax;
             obj.transform.position = _upperContainerBorder;
             obj.anchoredPosition += Vector2.Scale(Vector2.down + Vector2.right, obj.rect.size)/2f;
