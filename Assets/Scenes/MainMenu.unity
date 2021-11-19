@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 1251854143}
   - component: {fileID: 1251854147}
   m_Layer: 5
-  m_Name: IntroCanvas
+  m_Name: MainMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,7 +377,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bf7476e1ad0d079439a7e4ccf6076645, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -399,14 +399,14 @@ MonoBehaviour:
   fadingInitialImage: {fileID: 1316458369}
   opaquingFinalImage: {fileID: 1316458369}
   gameWorldImage: {fileID: 0}
+  stars: []
   initialFadingTime: 1.5
   finalOpaquingTime: 1.5
   gameWorldImageOpaquingTime: 1.5
   victoryPanel: {fileID: 0}
   defeatPanel: {fileID: 0}
-  nextSceneName: MenuMain
   healthSlider: {fileID: 0}
-  bloodlustSlider: {fileID: 0}
+  nextSceneName: 
 --- !u!1 &1268214517
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +844,9 @@ RectTransform:
   m_Father: {fileID: 1251854146}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -247, y: -167}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 164.9, y: 50.4}
   m_SizeDelta: {x: 261.4073, y: 49.0139}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013920347
@@ -900,7 +900,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainScene
+          m_StringArgument: Level2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2013920348

@@ -30,8 +30,6 @@ public class LevelManager : MonoBehaviour {
     /// Is the simulation currently running or not
     /// </summary>
     public bool simulationRunning;
-    
-    private bool _sceneTransitionTriggered;
 
     private void Awake() {
         uiManager = GetComponentInChildren<UIManager>();
@@ -47,15 +45,12 @@ public class LevelManager : MonoBehaviour {
     }
     
     public void LoadNextScene() {
-        StartCoroutine(LoadScene());
+        uiManager.LoadScene(nextSceneName);
     }
-
-    public IEnumerator LoadScene() {
-        if (!_sceneTransitionTriggered) {
-            _sceneTransitionTriggered = true;
-            yield return uiManager.OpaqueFinalImage();
-            SceneManager.LoadScene(nextSceneName);
-        }
+    
+    public void RestartLevel() {
+        nextSceneName = SceneManager.GetActiveScene().name;
+        uiManager.LoadScene(nextSceneName);
     }
 
     public void OnHealthChange() {
@@ -100,7 +95,8 @@ public class LevelManager : MonoBehaviour {
     }
 
     public IEnumerator ShowLevelCompletionInterface() {
-        yield return uiManager.ShowVictoryPanel();
+        int starNumber = mainCharacter.maxHealth - mainCharacter.health;
+        yield return uiManager.ShowVictoryPanel(starNumber);
     }
     
     public IEnumerator ShowLevelLostInterface() {

@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour {
     /// <summary>
     /// Game objects that contain the current amount of stars earned in the level
     /// </summary>
-    public GameObject[] starImages;
+    public GameObject[] stars;
 
     /// <summary>
     /// Time that the initial image takes to dissapear
@@ -55,12 +55,12 @@ public class UIManager : MonoBehaviour {
 
     public Slider healthSlider;
 
-    void Start() {
-        Task fadeTask = VanishInitialImage();
-    }
+    private Animator _animator;
 
-    public void RestartLevel() {
-        LoadScene(SceneManager.GetActiveScene().name);
+    public String nextSceneName;
+
+    void Start() {
+        _animator = GetComponent<Animator>();
     }
 
     /// <summary>
@@ -71,28 +71,26 @@ public class UIManager : MonoBehaviour {
         healthSlider.value = healthFactor;
     }
 
-    public async Task VanishInitialImage() {
-        fadingInitialImage.gameObject.SetActive(true);
-        await UIImageManager.InterpolateUImageColor(fadingInitialImage, new Color(0, 0, 0, 0), initialFadingTime);
-        fadingInitialImage.gameObject.SetActive(false);
+    public void LoadScene(String sceneName) {
+        nextSceneName = sceneName;
+        ShowBlackScreen();
     }
     
-    public IEnumerator OpaqueFinalImage() {
-        opaquingFinalImage.gameObject.SetActive(true);
-        yield return UIImageManager.InterpolateUImageColor(opaquingFinalImage, Color.black, finalOpaquingTime);
-    }
-    
-    public IEnumerator OpaqueGameWorldImage() {
-        gameWorldImage.gameObject.SetActive(true);
-        yield return UIImageManager.InterpolateUImageColor(gameWorldImage, Color.black, gameWorldImageOpaquingTime);
-    }
-    
-    public IEnumerator VanishGameWorldImage() {
-        yield return UIImageManager.InterpolateUImageColor(gameWorldImage, Color.black, gameWorldImageOpaquingTime);
-        gameWorldImage.gameObject.SetActive(false);
+    public void LoadNextScene() {
+        SceneManager.LoadScene(nextSceneName);
     }
 
-    public IEnumerator ShowVictoryPanel() {
+    /// <summary>
+    /// Shows a black screen that is painted on top of the game
+    /// </summary>
+    public void ShowBlackScreen() {
+        _animator.SetTrigger("FinalFade");
+    }
+
+    public IEnumerator ShowVictoryPanel(int starNumber) {
+        for (int i = 0; i < starNumber; i++) {
+            stars[i].SetActive(true);
+        }
         yield return ShowPanel(victoryPanel);
     }
     
@@ -103,14 +101,5 @@ public class UIManager : MonoBehaviour {
     public IEnumerator ShowPanel(UIDFadable panel) {
         panel.gameObject.SetActive(true);
         yield return null;
-    }
-    
-    public void LoadScene(String name) {
-        StartCoroutine(LoadNexSceneCor(name));
-    }
-
-    private IEnumerator LoadNexSceneCor(String nextSceneName) {
-        yield return OpaqueFinalImage();
-        SceneManager.LoadScene(nextSceneName);
     }
 }

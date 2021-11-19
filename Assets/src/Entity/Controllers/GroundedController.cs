@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class GroundedController : MovingController {
 
-    [SerializeField] protected bool _grounded;            // Whether or not the entity is grounded.
+    [SerializeField] public bool _grounded;            // Whether or not the entity is grounded.
     
     [SerializeField] protected LayerMask m_WhatIsGround;  // A mask determining what is ground to the character
 
@@ -29,6 +29,10 @@ public class GroundedController : MovingController {
         if (Physics2D.OverlapCircle(m_GroundCheck.position, groundedRadius, m_WhatIsGround)) {
             _grounded = true;
         }
+    }
+
+    public bool GetGrounded() {
+        return _grounded;
     }
     
     public bool FallDetected() {

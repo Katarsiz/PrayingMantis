@@ -28,6 +28,8 @@ public class AIFixedCommandChar : MainCharacter {
     /// </summary>
     public BugManager bugManager;
 
+    public PlatformerCharacter2D charController;
+
     void Start() {
         base.Start();
         Command [] commandsArray = GetComponentsInChildren<Command>();
@@ -35,6 +37,7 @@ public class AIFixedCommandChar : MainCharacter {
             commands = commandsArray.ToList();
         }
         StartCoroutine(ExecuteAllCommands());
+        charController = GetComponent<PlatformerCharacter2D>();
         modifiable = GetComponent<MainCharacterModifiable>();
         // Platformer controller construction
         _platformerController = GetComponent<PlatformerCharacter2D>();
@@ -42,10 +45,6 @@ public class AIFixedCommandChar : MainCharacter {
     }
     
     void Update() {
-        if (ObstacleDetected()) {
-            xMove *= -1;
-            controller.Flip();
-        }
         // Picks any interactable object if it is in range
         if (interactor.lastInteractableObject) {
             interactor.TryInteract();
@@ -53,7 +52,10 @@ public class AIFixedCommandChar : MainCharacter {
     }
 
     private void FixedUpdate() {
-        if (FallDetected()) {
+        if (ObstacleDetected() && charController.GetGrounded()) {
+            xMove *= -1;
+            controller.Flip();
+        } else if (FallDetected()) {
             StartCoroutine(OneShotJump());
         }
         _platformerController.Move(xMove,yMove,crouching,jumping);
