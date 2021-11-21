@@ -204,8 +204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableColor: {r: 1, g: 0.93155926, b: 0, a: 1}
   idleColor: {r: 1, g: 1, b: 1, a: 1}
-  magnetism: 3
+  magnetism: 4
   magneticCollider: {fileID: 5330920228974706589}
+  activeOnStart: 0
 --- !u!114 &5330920229918276489
 MonoBehaviour:
   m_ObjectHideFlags: 0
