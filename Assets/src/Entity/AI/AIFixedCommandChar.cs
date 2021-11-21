@@ -30,6 +30,11 @@ public class AIFixedCommandChar : MainCharacter {
 
     public PlatformerCharacter2D charController;
 
+    /// <summary>
+    /// Collider used when to detect if the player is hovering its mouse over the entity
+    /// </summary>
+    public Collider2D hoverCollider;
+
     void Start() {
         base.Start();
         Command [] commandsArray = GetComponentsInChildren<Command>();
@@ -112,5 +117,15 @@ public class AIFixedCommandChar : MainCharacter {
 
     public IEnumerator ExecuteCommand(Command c) {
         yield return c.Execute();
+    }
+
+    public void OnSimulationStart() {
+        hoverCollider.enabled = false;
+        UnFreezeMovement();
+    }
+    
+    public void OnSimulationEnd() {
+        hoverCollider.enabled = true;
+        FreezeMovement();
     }
 }

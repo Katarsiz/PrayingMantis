@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour {
 
     public Transform[] checkpoints;
     
-    public MainCharacter mainCharacter;
+    public AIFixedCommandChar mainCharacter;
 
     private UIManager uiManager;
     
@@ -66,14 +66,14 @@ public class LevelManager : MonoBehaviour {
         mainCharacterCMVC.gameObject.SetActive(false);
         freeLookCMVC.gameObject.SetActive(true);
         simulationRunning = false;
-        mainCharacter.FreezeMovement();
+        mainCharacter.OnSimulationEnd();
     }
 
     public void ResumeSimulation() {
         mainCharacterCMVC.gameObject.SetActive(true);
         freeLookCMVC.gameObject.SetActive(false);
         simulationRunning = true;
-        mainCharacter.UnFreezeMovement();
+        mainCharacter.OnSimulationStart();
     }
 
     public void OnLevelLost() {

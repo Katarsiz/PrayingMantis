@@ -28,9 +28,9 @@ public class PlatformerCharacter2D : GroundedController {
 
         private Transform _clingCheck;
         const float _kClimbingLength = 2.33f; // Amount that the climber checks when climbing up a ledge
-        const float _kClimbingHeight = 3.25f; // Amount that the climber checks when climbing up a ledge
+        const float _kClimbingHeight = 2.25f; // Amount that the climber checks when climbing up a ledge
         private Transform _climbCheck; // Transform that the player will raycast to check if it must climb
-        const float _kObstacleCheckLength = 3f; // Amount that the obstacle checker checks when climbing up a ledge
+        const float _kObstacleCheckLength = 1.5f; // Amount that the obstacle checker checks when climbing up a ledge
         private Transform m_obstacleCheck;    // A position marking where to check if an obstacle is found
         private bool _clinging;
 
@@ -286,6 +286,15 @@ public class PlatformerCharacter2D : GroundedController {
             rb.gravityScale = g;
         }
         
+        public void SetWeight(float m) {
+            rb.mass = m;
+        }
+
+        public void SetHorizontalMaxSpeed(float newMaxSpeed){
+            currentHorizontalMaxSpeed = newMaxSpeed;
+            horizontalMaxSpeed = newMaxSpeed;
+        }
+        
         /// <summary>
         /// Increases the gravity by n
         /// </summary>
@@ -300,6 +309,11 @@ public class PlatformerCharacter2D : GroundedController {
 
         public  override void Unfreeze() {
             rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+
+        public float GetWeight() {
+            return rb.mass;
+            return rb.mass;
         }
 
         /// <summary>

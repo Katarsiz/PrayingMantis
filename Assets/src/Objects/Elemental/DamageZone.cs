@@ -33,7 +33,9 @@ public class DamageZone : MonoBehaviour {
         Affectable a = other.GetComponent<Affectable>();
         if (a && !_entityCooldowns.Contains(a)) {
             _damageEffect.Apply(a);
-            a.gameObject.transform.position = teleportLocation.position;
+            if (teleportLocation) {
+                a.gameObject.transform.position = teleportLocation.position;
+            }
             StartCoroutine(CooldownAffectable(damageCooldown, a));
         }
     }
