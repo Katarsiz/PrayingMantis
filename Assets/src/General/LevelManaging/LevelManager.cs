@@ -24,6 +24,16 @@ public class LevelManager : MonoBehaviour {
 
     public String nextSceneName;
 
+    /// <summary>
+    /// If bug correction is enabled
+    /// </summary>
+    public bool correctionEnabled;
+    
+    /// <summary>
+    /// All the bugs that can be corrected in the level
+    /// </summary>
+    public Bug[] bugs;
+
     private String _currentScene;
 
     /// <summary>
@@ -54,8 +64,24 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void OnHealthChange() {
+        // Corrects the bugs, if there are any and correction is activated
+        if (correctionEnabled) {
+            Correct();
+        }
         float healthFraction = (float)mainCharacter.health / mainCharacter.maxHealth;
         uiManager.UpdateHealth(healthFraction);
+    }
+
+    /// <summary>
+    /// Corrects the bugs
+    /// </summary>
+    public void Correct() {
+        for (int i = 0; i < bugs.Length; i++) {
+            // if successfully corrected, stop the correction
+            if (bugs[i].Correct()) {
+                break;
+            }
+        }
     }
 
     public void ReloadCurrentScene() {

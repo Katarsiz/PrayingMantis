@@ -669,6 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastInteractableObject: {fileID: 0}
   currentlyInteractingObject: {fileID: 0}
+  canOpenLockedDoors: 0
   character: {fileID: 7311578964759616470}
 --- !u!61 &7311578963523116786
 BoxCollider2D:
@@ -768,7 +769,7 @@ GameObject:
   - component: {fileID: 7311578964759616464}
   - component: {fileID: 7311578964759616470}
   - component: {fileID: 7311578964759616467}
-  - component: {fileID: 5025598143225061537}
+  - component: {fileID: 5588554045441041487}
   - component: {fileID: 7311578964759616471}
   - component: {fileID: 7311578964759616473}
   m_Layer: 8
@@ -847,7 +848,6 @@ MonoBehaviour:
   yMove: 0
   crouching: 0
   jumping: 0
-  modifiable: {fileID: 5025598143225061537}
   bugManager:
     bugs:
     - {fileID: 0}
@@ -890,7 +890,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   jumpBug: {fileID: 0}
---- !u!114 &5025598143225061537
+--- !u!114 &5588554045441041487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -899,13 +899,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7311578964759616468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d006c790557714a8bfa68490a2611b, type: 3}
+  m_Script: {fileID: 11500000, guid: f406bed7c5c272f4a9dc908fc48c25c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   modifiersContainer: {fileID: 0}
   animator: {fileID: 2157108040031984664}
-  bugs:
-  - {fileID: 0}
 --- !u!70 &7311578964759616471
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -14,12 +14,6 @@ public class Modifiable : MonoBehaviour {
     public Animator animator;
 
     /// <summary>
-    /// Bugs this entity can be affected by. Logic components request bugs from the modifiable and assign them to
-    /// their corresponding components that need them
-    /// </summary>
-    public List<Bug> bugs;
-
-    /// <summary>
     /// Functions called when the mouse is hovered over the entity
     /// </summary>
     public virtual void OnMouseHovered() {
@@ -34,14 +28,6 @@ public class Modifiable : MonoBehaviour {
     public virtual void OnMouseExited() {
         if (animator) {
             animator.SetInteger("EffectId",Element.NONE);
-        }
-    }
-
-    public void Correct() {
-        for (int i = 0; i < bugs.Count; i++) {
-            if (bugs[i].Correct()) {
-                break;
-            }
         }
     }
 

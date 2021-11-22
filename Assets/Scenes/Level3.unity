@@ -12744,6 +12744,11 @@ PrefabInstance:
       propertyPath: modifiersContainer
       value: 
       objectReference: {fileID: 759504932}
+    - target: {fileID: 5588554045441041487, guid: b9784fa5344b7df4abfdbbac9310264f,
+        type: 3}
+      propertyPath: modifiersContainer
+      value: 
+      objectReference: {fileID: 759504932}
     - target: {fileID: 7311578963259883268, guid: b9784fa5344b7df4abfdbbac9310264f,
         type: 3}
       propertyPath: m_RootOrder
@@ -36538,6 +36543,9 @@ MonoBehaviour:
   freeLookCMVC: {fileID: 597440621}
   mainCharacterCMVC: {fileID: 817725954}
   nextSceneName: Level2
+  correctionEnabled: 1
+  bugs:
+  - {fileID: 367435679}
   simulationRunning: 0
 --- !u!1 &1986060789
 GameObject:

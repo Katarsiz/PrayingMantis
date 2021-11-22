@@ -21,13 +21,6 @@ public class AIFixedCommandChar : MainCharacter {
     
     public bool jumping;
 
-    public MainCharacterModifiable modifiable;
-
-    /// <summary>
-    /// Manager containing all the bugs
-    /// </summary>
-    public BugManager bugManager;
-
     public PlatformerCharacter2D charController;
 
     /// <summary>
@@ -43,10 +36,8 @@ public class AIFixedCommandChar : MainCharacter {
         }
         StartCoroutine(ExecuteAllCommands());
         charController = GetComponent<PlatformerCharacter2D>();
-        modifiable = GetComponent<MainCharacterModifiable>();
         // Platformer controller construction
         _platformerController = GetComponent<PlatformerCharacter2D>();
-        _platformerController.jumpBug = modifiable.GetJumpBug();
     }
     
     void Update() {
@@ -67,7 +58,6 @@ public class AIFixedCommandChar : MainCharacter {
     }
     
     public override void OnDamageTaken() {
-        bugManager.Correct();
         levelManager.OnHealthChange();
     }
 

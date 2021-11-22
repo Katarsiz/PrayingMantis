@@ -13,6 +13,11 @@ public class Interactor : MonoBehaviour {
     /// Current object the interactor is interacting with
     /// </summary>
     public Interactable currentlyInteractingObject;
+
+    /// <summary>
+    /// Flag that allows this interactor to open doors
+    /// </summary>
+    public bool canOpenLockedDoors;
     
     private void OnTriggerEnter2D(Collider2D other) {
         Interactable i;

@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class Door : Interactable {
 
-    /// <summary>
-    /// Bug containing the functions called when 
-    /// </summary>
-    public Bug openDoorBug;
-
-    public void Open() {
-        openDoorBug.ApplyAllModifiers();
+    public virtual void Open() {
         GetComponent<BoxCollider2D>().enabled = false;
     }
     public override void OnInteractionRange() {

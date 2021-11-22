@@ -171,7 +171,9 @@ public class PlatformerCharacter2D : GroundedController {
         }
 
         public void Jump() {
-            jumpBug.ApplyAllModifiers();
+            if (jumpBug) {
+                jumpBug.ApplyAllModifiers();
+            }
             // First, the vertical rigid body movement is stopped
             rb.velocity = new Vector2(rb.velocity.x,0);
             // Then, the force is added
