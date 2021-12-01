@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: f9bb2e640f9c448479bc167b153b19d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4566056936571242063
+    second: chrctr-spritesheet_cochinilla_0
+  - first:
+      213: -8539858866359614809
+    second: chrctr-spritesheet_cochinilla_1
+  - first:
+      213: -4056144808763545557
+    second: chrctr-spritesheet_cochinilla_2
+  - first:
+      213: -2457792370908476421
+    second: chrctr-spritesheet_cochinilla_3
+  - first:
+      213: 7132269783348704102
+    second: chrctr-spritesheet_cochinilla_4
+  - first:
+      213: -2101879821867309956
+    second: chrctr-spritesheet_cochinilla_5
+  - first:
+      213: 1046065206183401518
+    second: chrctr-spritesheet_cochinilla_6
+  - first:
+      213: -4185363566499606502
+    second: chrctr-spritesheet_cochinilla_7
+  - first:
+      213: -4564165101462910435
+    second: chrctr-spritesheet_cochinilla_8
+  - first:
+      213: -3057417485703380369
+    second: chrctr-spritesheet_cochinilla_9
+  - first:
+      213: -3570049521234373588
+    second: chrctr-spritesheet_cochinilla_10
+  - first:
+      213: -5637316859355236305
+    second: chrctr-spritesheet_cochinilla_11
+  - first:
+      213: -322941773169332234
+    second: chrctr-spritesheet_cochinilla_12
+  - first:
+      213: -2058274611032290801
+    second: chrctr-spritesheet_cochinilla_13
+  - first:
+      213: -1086812014328263267
+    second: chrctr-spritesheet_cochinilla_14
+  - first:
+      213: -63588197956786470
+    second: chrctr-spritesheet_cochinilla_15
+  - first:
+      213: -7195701086554608304
+    second: chrctr-spritesheet_cochinilla_16
+  - first:
+      213: -2936244287605819807
+    second: chrctr-spritesheet_cochinilla_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 37
+        width: 27
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4689808794ed5f30800000000000000
+      internalID: 4566056936571242063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 37
+        width: 28
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a24aae6b935c7980800000000000000
+      internalID: -8539858866359614809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 37
+        width: 28
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28aa1c69cda5b7c0800000000000000
+      internalID: -4056144808763545557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 37
+        width: 29
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbc5505cda24edd0800000000000000
+      internalID: -2457792370908476421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 37
+        width: 28
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66370ce5499eaf260800000000000000
+      internalID: 7132269783348704102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 37
+        width: 28
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74a901307f94d2e0800000000000000
+      internalID: -2101879821867309956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 37
+        width: 27
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28157243ce548e00800000000000000
+      internalID: 1046065206183401518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 6
+        width: 27
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10dde2e20a9ae5c0800000000000000
+      internalID: -4185363566499606502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_8
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 6
+        width: 30
+        height: 30
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a811fa504d8a0c0800000000000000
+      internalID: -4564165101462910435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_9
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 8
+        width: 29
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f620592eefed195d0800000000000000
+      internalID: -3057417485703380369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 11
+        width: 27
+        height: 23
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24954810e2a47ec0800000000000000
+      internalID: -3570049521234373588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 9
+        width: 26
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f287fc72f2a34c1b0800000000000000
+      internalID: -5637316859355236305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_12
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 13
+        width: 29
+        height: 22
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff6b171b2ea48bf0800000000000000
+      internalID: -322941773169332234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 5
+        width: 36
+        height: 29
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a073f752a8f63e0800000000000000
+      internalID: -2058274611032290801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 5
+        width: 34
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d465c2b3edae0f0800000000000000
+      internalID: -1086812014328263267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_15
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 5
+        width: 35
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6e0e0fed61e1ff0800000000000000
+      internalID: -63588197956786470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_16
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 5
+        width: 35
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d250a7cfbb32c90800000000000000
+      internalID: -7195701086554608304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_cochinilla_17
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 6
+        width: 27
+        height: 31
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1663c77906d5047d0800000000000000
+      internalID: -2936244287605819807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a0f869ad7902427469330843f3684fa6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
