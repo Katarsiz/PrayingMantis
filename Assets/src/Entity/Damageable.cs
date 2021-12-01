@@ -10,8 +10,15 @@ public abstract class Damageable : MonoBehaviour {
     public int maxHealth;
 
     public bool canTakeDamage;
+    
+    public AudioClip deathAudio;
+    
+    public AudioClip damagedAudio;
+    
+    public AudioClip attackAudio;
 
     public void TakeDamage(int damage) {
+        AudioEventManager.PlayOneShotAudioClip(damagedAudio);
         if (canTakeDamage) {
             health -= damage;
             OnDamageTaken();
@@ -26,6 +33,7 @@ public abstract class Damageable : MonoBehaviour {
     }
     
     public virtual void OnDeath() {
+        PlayDeathAudio();
         Destroy(gameObject);
     }
 
@@ -35,6 +43,14 @@ public abstract class Damageable : MonoBehaviour {
         if (health > maxHealth) {
             health = maxHealth;
         }
+    }
+
+    public void PlayDeathAudio() {
+        AudioEventManager.PlayOneShotAudioClip(deathAudio);
+    }
+    
+    public void PlayAttackAudio() {
+        AudioEventManager.PlayOneShotAudioClip(attackAudio);
     }
 
     /// <summary>

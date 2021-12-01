@@ -20,6 +20,10 @@ public class UITracker : MonoBehaviour {
     public IEnumerator TrackTarget() {
         while (tracked) {
             yield return new WaitForFixedUpdate();
+            if (!target) {
+                tracked = false;
+                break;
+            }
             transform.position = Camera.main.WorldToScreenPoint(target.position);
         }
     }

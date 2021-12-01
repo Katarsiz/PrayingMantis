@@ -39,6 +39,7 @@ public class MainCharacter : Affectable {
     /// Freezes the player and plays the death screens
     /// </summary>
     public override void OnDeath() {
+        PlayDeathAudio();
         levelManager.OnLevelCompleted();
     }
 

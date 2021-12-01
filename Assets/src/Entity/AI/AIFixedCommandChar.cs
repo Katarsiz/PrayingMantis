@@ -28,8 +28,34 @@ public class AIFixedCommandChar : MainCharacter {
     /// </summary>
     public Collider2D hoverCollider;
 
+    /// <summary>
+    /// Collider used to detect enemies
+    /// </summary>
+    public Collider2D enemyDetectionCollider;
+
+    /// <summary>
+    /// Bug executed when attacking
+    /// </summary>
+    public Bug attackBug;
+
+    /// <summary>
+    /// Damage this entity deals
+    /// </summary>
+    public int damage;
+
+    /// <summary>
+    /// Time ita takes for this entity to attack again
+    /// </summary>
+    public float attackCooldown;
+
+    /// <summary>
+    /// Flag that allows the entity to attack (or not)
+    /// </summary>
+    private bool _canAttack;
+
     void Start() {
         base.Start();
+        _canAttack = true;
         Command [] commandsArray = GetComponentsInChildren<Command>();
         if (commandsArray != null) {
             commands = commandsArray.ToList();
@@ -45,6 +71,37 @@ public class AIFixedCommandChar : MainCharacter {
         if (interactor.lastInteractableObject) {
             interactor.TryInteract();
         }
+        TryAttack();
+    }
+
+    public void TryAttack() {
+        // Deal damage to the first detected enemy
+        List<Collider2D> collidersInRange = new List<Collider2D>();
+        for (int i = 0; i < enemyDetectionCollider.GetContacts(collidersInRange); i++) {
+            if (_canAttack && collidersInRange[i].TryGetComponent(out Enemy enemy)) {
+                Attack(enemy);
+                break;
+            }
+        }
+    }
+
+    public void Attack(Affectable a) {
+        StartCoroutine(AttackCoroutine(a));
+        StartCoroutine(AttackCooldown());
+    }
+    
+    public IEnumerator AttackCoroutine(Affectable a) {
+        animator.SetBool("Attacking",true);
+        attackBug.ApplyAllModifiers();
+        a.TakeDamage(damage);
+        yield return new WaitForSeconds(0.8f);
+        animator.SetBool("Attacking",false);
+    }
+
+    public IEnumerator AttackCooldown() {
+        _canAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        _canAttack = true;
     }
 
     private void FixedUpdate() {

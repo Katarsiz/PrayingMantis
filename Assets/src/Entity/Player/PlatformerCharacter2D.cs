@@ -114,7 +114,7 @@ public class PlatformerCharacter2D : GroundedController {
                 xMove = crouch ? xMove*m_CrouchSpeed : xMove;
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
-                animator.SetFloat("Speed", Mathf.Abs(xMove));
+                animator.SetFloat("Speed", rb.velocity.x);
 
                 // Move the character
                 if (xMove != 0 && !_clinging && canMove) {
@@ -178,6 +178,7 @@ public class PlatformerCharacter2D : GroundedController {
             rb.velocity = new Vector2(rb.velocity.x,0);
             // Then, the force is added
             rb.AddForce(new Vector2(0f, m_JumpForce));
+            AudioEventManager.PlayOneShotAudioClip(jumpAudio);
         }
 
         /// <summary>
@@ -303,6 +304,10 @@ public class PlatformerCharacter2D : GroundedController {
         /// <param name="n"></param>
         public void IncreaseGravity(float n) {
             rb.gravityScale += n;
+        }
+        
+        public void IncreaseWeight(float n) {
+            rb.mass += n;
         }
 
         public override void Freeze() {

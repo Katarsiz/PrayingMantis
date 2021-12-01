@@ -24,7 +24,7 @@ public class MovingController : MonoBehaviour {
     /// <summary>
     ///  Direction which this character is looking at
     /// </summary>
-    protected Vector2 directionVector;
+    public Vector2 directionVector;
     
     /// <summary>
     /// Script that contains the logic of the character
@@ -38,7 +38,7 @@ public class MovingController : MonoBehaviour {
     /// </summary>
     protected Rigidbody2D rb;
 
-    protected bool facingRight = true;  // For determining which way the player is currently facing.
+    public bool facingRight = true;  // For determining which way the player is currently facing.
 
     protected bool canMove = true; // Entities can move by default
 
@@ -46,7 +46,10 @@ public class MovingController : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         currentHorizontalMaxSpeed = horizontalMaxSpeed;
         currentHorizontalForce = horizontalForce;
-        directionVector = Vector2.right;
+        directionVector = Vector2.left;
+        if (facingRight) {
+            directionVector = Vector2.right;
+        }
     }
 
     public void SetAnimator(Animator animator) {

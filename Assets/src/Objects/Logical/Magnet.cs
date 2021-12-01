@@ -16,6 +16,8 @@ public class Magnet : Pickable {
 
     private ContactFilter2D _detectionFilter;
 
+    public AudioClip pickAudio;
+
     /// <summary>
     /// If the magnet must be active or not
     /// </summary>
@@ -35,6 +37,7 @@ public class Magnet : Pickable {
     
     public override void OnPick(Interactor i) {
         base.OnPick(i);
+        AudioEventManager.PlayOneShotAudioClip(pickAudio);
         StartCoroutine(ActivateMagnet());
     }
 

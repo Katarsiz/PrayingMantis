@@ -10,7 +10,9 @@ public class BugableDoor : Door {
     public Bug openDoorBug;
     
     public override void Open() {
-        openDoorBug.ApplyAllModifiers();
+        if (openDoorBug) {
+            openDoorBug.ApplyAllModifiers();
+        }
         base.Open();
     }
 }

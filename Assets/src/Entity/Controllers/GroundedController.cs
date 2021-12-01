@@ -18,6 +18,8 @@ public class GroundedController : MovingController {
     const float _kFallCheckHeight = 3f; // Amount that the fall checker checks when climbing up a ledge
     private Transform m_fallCheck;        // A position marking where to check if no floor is next
 
+    public AudioClip jumpAudio;
+
     public override void Initialize() {
         base.Initialize();
         m_GroundCheck = transform.Find("GroundCheck");

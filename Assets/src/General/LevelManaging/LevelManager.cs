@@ -14,6 +14,11 @@ public class LevelManager : MonoBehaviour {
     
     public AIFixedCommandChar mainCharacter;
 
+    /// <summary>
+    /// Enemies in the scene, these will be freezed an released upon simulation start
+    /// </summary>
+    public Enemy[] enemies;
+
     private UIManager uiManager;
     
     public PlayerInputManager playerInputManager;
@@ -93,6 +98,12 @@ public class LevelManager : MonoBehaviour {
         freeLookCMVC.gameObject.SetActive(true);
         simulationRunning = false;
         mainCharacter.OnSimulationEnd();
+        // Deactivates all enemies
+        foreach (Enemy enemy in enemies) {
+            if (enemy) {
+                enemy.OnSimulationEnd();
+            }
+        }
     }
 
     public void ResumeSimulation() {
@@ -100,6 +111,10 @@ public class LevelManager : MonoBehaviour {
         freeLookCMVC.gameObject.SetActive(false);
         simulationRunning = true;
         mainCharacter.OnSimulationStart();
+        // Activates all enemies
+        foreach (Enemy enemy in enemies) {
+            enemy.OnSimulationStart();
+        }
     }
 
     public void OnLevelLost() {
