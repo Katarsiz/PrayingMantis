@@ -1,34 +1,40 @@
 fileFormatVersion: 2
-guid: 3b43cf01258b8ae44836c25b6de2232c
+guid: d68c5939d76790a488fec689b4ce2ac2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5503280325538181195
-    second: MainTilemap_0
+      213: 8329959787448241057
+    second: animaciones_bandera-puerta_corregido(1)_0
   - first:
-      213: 6731458420674005915
-    second: MainTilemap_1
+      213: -2851406458430930300
+    second: animaciones_bandera-puerta_corregido(1)_1
   - first:
-      213: -8547769790571501902
-    second: MainTilemap_2
+      213: 2822055207084237429
+    second: animaciones_bandera-puerta_corregido(1)_2
   - first:
-      213: -4155079696338569859
-    second: MainTilemap_3
+      213: 5073608277842659018
+    second: animaciones_bandera-puerta_corregido(1)_3
   - first:
-      213: 273833454096191620
-    second: MainTilemap_4
+      213: -626643672191136509
+    second: animaciones_bandera-puerta_corregido(1)_4
   - first:
-      213: -7182292182074296110
-    second: MainTilemap_5
+      213: -5397031143955060526
+    second: animaciones_bandera-puerta_corregido(1)_5
   - first:
-      213: -1341623758087551930
-    second: MainTilemap_6
+      213: -6915167297162198552
+    second: animaciones_bandera-puerta_corregido(1)_6
   - first:
-      213: 2350669926237394328
-    second: MainTilemap_7
+      213: 1250355129705332096
+    second: animaciones_bandera-puerta_corregido(1)_7
   - first:
-      213: 3730946185360411397
-    second: MainTilemap_8
+      213: -2393382738584467477
+    second: animaciones_bandera-puerta_corregido(1)_8
+  - first:
+      213: 5379542147411342922
+    second: animaciones_bandera-puerta_corregido(1)_9
+  - first:
+      213: 6153850839878948065
+    second: animaciones_bandera-puerta_corregido(1)_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,190 +132,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainTilemap_0
+      name: animaciones_bandera-puerta_corregido(1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
+        x: 9
+        y: 52
+        width: 24
+        height: 51
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4079176c449f5c40800000000000000
-      internalID: 5503280325538181195
+      spriteID: 1ab042cea46f99370800000000000000
+      internalID: 8329959787448241057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_1
+      name: animaciones_bandera-puerta_corregido(1)_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
+        x: 36
+        y: 52
+        width: 23
+        height: 50
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b0690d4c1fa6d50800000000000000
-      internalID: 6731458420674005915
+      spriteID: 48248f6fee4cd68d0800000000000000
+      internalID: -2851406458430930300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_2
+      name: animaciones_bandera-puerta_corregido(1)_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
+        x: 64
+        y: 52
+        width: 23
+        height: 52
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b6ab2bd9a8306980800000000000000
-      internalID: -8547769790571501902
+      spriteID: 5722cca4244f92720800000000000000
+      internalID: 2822055207084237429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_3
+      name: animaciones_bandera-puerta_corregido(1)_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
+        x: 91
+        y: 52
+        width: 24
+        height: 53
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d753d4ed7013656c0800000000000000
-      internalID: -4155079696338569859
+      spriteID: ac60b4af8d3196640800000000000000
+      internalID: 5073608277842659018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_4
+      name: animaciones_bandera-puerta_corregido(1)_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
+        x: 116
+        y: 52
+        width: 25
+        height: 53
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480950f531adcc300800000000000000
-      internalID: 273833454096191620
+      spriteID: 30d0d4676e6bd47f0800000000000000
+      internalID: -626643672191136509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_5
+      name: animaciones_bandera-puerta_corregido(1)_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
+        x: 144
+        y: 52
+        width: 25
+        height: 53
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d87566505f535c90800000000000000
-      internalID: -7182292182074296110
+      spriteID: 2d8a6dee4c4e915b0800000000000000
+      internalID: -5397031143955060526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_6
+      name: animaciones_bandera-puerta_corregido(1)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 7
+        width: 6
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64487fcdc48916de0800000000000000
-      internalID: -1341623758087551930
+      spriteID: 8e1cf3a3bf36800a0800000000000000
+      internalID: -6915167297162198552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_7
+      name: animaciones_bandera-puerta_corregido(1)_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 7
+        width: 7
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 895d291f7d14f9020800000000000000
-      internalID: 2350669926237394328
+      spriteID: 08d7c25ad572a5110800000000000000
+      internalID: 1250355129705332096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainTilemap_8
+      name: animaciones_bandera-puerta_corregido(1)_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 7
+        width: 10
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50b8186c9cbf6c330800000000000000
-      internalID: 3730946185360411397
+      spriteID: be70f17741ff8ced0800000000000000
+      internalID: -2393382738584467477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animaciones_bandera-puerta_corregido(1)_9
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 7
+        width: 13
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46f1beb419f7aa40800000000000000
+      internalID: 5379542147411342922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animaciones_bandera-puerta_corregido(1)_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 6
+        width: 22
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e459bffbbed66550800000000000000
+      internalID: 6153850839878948065
       vertices: []
       indices: 
       edges: []

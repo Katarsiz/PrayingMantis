@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 4f2fb78febf0d6f4599e1a03d26cbe38
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3070679512578233842
+    second: chrctr-spritesheet_raton_0
+  - first:
+      213: -7153065516785660369
+    second: chrctr-spritesheet_raton_1
+  - first:
+      213: 5951930326702761737
+    second: chrctr-spritesheet_raton_2
+  - first:
+      213: -4111214138052414165
+    second: chrctr-spritesheet_raton_3
+  - first:
+      213: 4011401319077267369
+    second: chrctr-spritesheet_raton_4
+  - first:
+      213: 6370168506232574213
+    second: chrctr-spritesheet_raton_5
+  - first:
+      213: -8592455855483487657
+    second: chrctr-spritesheet_raton_6
+  - first:
+      213: 7974470443481072065
+    second: chrctr-spritesheet_raton_7
+  - first:
+      213: 8581211092025731574
+    second: chrctr-spritesheet_raton_8
+  - first:
+      213: -5334128023033398057
+    second: chrctr-spritesheet_raton_9
+  - first:
+      213: 149630181753590281
+    second: chrctr-spritesheet_raton_10
+  - first:
+      213: -6950669733300745769
+    second: chrctr-spritesheet_raton_11
+  - first:
+      213: 4225332709971090287
+    second: chrctr-spritesheet_raton_12
+  - first:
+      213: -7069942530567580827
+    second: chrctr-spritesheet_raton_13
+  - first:
+      213: -8095108194661981679
+    second: chrctr-spritesheet_raton_14
+  - first:
+      213: 8405294884172868613
+    second: chrctr-spritesheet_raton_15
+  - first:
+      213: 3599887457546109180
+    second: chrctr-spritesheet_raton_16
+  - first:
+      213: 1458108202530155645
+    second: chrctr-spritesheet_raton_17
+  - first:
+      213: 4862839368915606470
+    second: chrctr-spritesheet_raton_18
+  - first:
+      213: 5908255126024469683
+    second: chrctr-spritesheet_raton_19
+  - first:
+      213: -321252509823361326
+    second: chrctr-spritesheet_raton_20
+  - first:
+      213: 9090176896259428050
+    second: chrctr-spritesheet_raton_21
+  - first:
+      213: 4892218904629413342
+    second: chrctr-spritesheet_raton_22
+  - first:
+      213: 6648653515893049530
+    second: chrctr-spritesheet_raton_23
+  - first:
+      213: 3942015068393158624
+    second: chrctr-spritesheet_raton_24
+  - first:
+      213: -5667420420985856990
+    second: chrctr-spritesheet_raton_25
+  - first:
+      213: -2827675623548234031
+    second: chrctr-spritesheet_raton_26
+  - first:
+      213: -74908630244408434
+    second: chrctr-spritesheet_raton_27
+  - first:
+      213: -357950336017797555
+    second: chrctr-spritesheet_raton_28
+  - first:
+      213: -5228152896352471525
+    second: chrctr-spritesheet_raton_29
+  - first:
+      213: 7322490537543508967
+    second: chrctr-spritesheet_raton_30
+  - first:
+      213: 2875137091331347961
+    second: chrctr-spritesheet_raton_31
+  - first:
+      213: 992954534134447778
+    second: chrctr-spritesheet_raton_32
+  - first:
+      213: -3699634726367571625
+    second: chrctr-spritesheet_raton_33
+  - first:
+      213: 917463615710495066
+    second: chrctr-spritesheet_raton_34
+  - first:
+      213: -6524747187247730987
+    second: chrctr-spritesheet_raton_35
+  - first:
+      213: 5584527352120789740
+    second: chrctr-spritesheet_raton_36
+  - first:
+      213: 2362433316687155727
+    second: chrctr-spritesheet_raton_37
+  - first:
+      213: -2317190968918894812
+    second: chrctr-spritesheet_raton_38
+  - first:
+      213: 2994598369274548094
+    second: chrctr-spritesheet_raton_39
+  - first:
+      213: 1133887774807890284
+    second: chrctr-spritesheet_raton_40
+  - first:
+      213: 6756121260375303649
+    second: chrctr-spritesheet_raton_41
+  - first:
+      213: -5520442691389284555
+    second: chrctr-spritesheet_raton_42
+  - first:
+      213: 3751536133270638217
+    second: chrctr-spritesheet_raton_43
+  - first:
+      213: 6981413169219929032
+    second: chrctr-spritesheet_raton_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 135
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a64b1a041c265d0800000000000000
+      internalID: -3070679512578233842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 135
+        width: 15
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e05e0afc43bbc90800000000000000
+      internalID: -7153065516785660369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 135
+        width: 16
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9072ef2f811899250800000000000000
+      internalID: 5951930326702761737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 135
+        width: 16
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2572d9068802f6c0800000000000000
+      internalID: -4111214138052414165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 135
+        width: 17
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a742231f3c5ba730800000000000000
+      internalID: 4011401319077267369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 135
+        width: 15
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5019f5d7182676850800000000000000
+      internalID: 6370168506232574213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 135
+        width: 15
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a7ea99ce671c880800000000000000
+      internalID: -8592455855483487657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 135
+        width: 16
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c18a872e920bae60800000000000000
+      internalID: 7974470443481072065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_8
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 135
+        width: 16
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9e5d2e506961770800000000000000
+      internalID: 8581211092025731574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_9
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 135
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc33a013de59f5b0800000000000000
+      internalID: -5334128023033398057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 135
+        width: 17
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90299178bd7931200800000000000000
+      internalID: 149630181753590281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_11
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 135
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9cc8b24b24a8f90800000000000000
+      internalID: -6950669733300745769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 97
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b5aa386b563aa30800000000000000
+      internalID: 4225332709971090287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 97
+        width: 17
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d7130ab482ed90800000000000000
+      internalID: -7069942530567580827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_14
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 98
+        width: 17
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112a1d69cf568af80800000000000000
+      internalID: -8095108194661981679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 99
+        width: 18
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c288bf92b95a470800000000000000
+      internalID: 8405294884172868613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_16
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 97
+        width: 18
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf08b62d19e55f130800000000000000
+      internalID: 3599887457546109180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 97
+        width: 18
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ca4ef4fad3c3410800000000000000
+      internalID: 1458108202530155645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 97
+        width: 18
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbdfff34a64c7340800000000000000
+      internalID: 4862839368915606470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 97
+        width: 18
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcb11ddbb65ef150800000000000000
+      internalID: 5908255126024469683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 97
+        width: 18
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de96cc5b8eaa8bf0800000000000000
+      internalID: -321252509823361326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 98
+        width: 18
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de810fa9bbc62e70800000000000000
+      internalID: 9090176896259428050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 97
+        width: 18
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed503e57c27a4e340800000000000000
+      internalID: 4892218904629413342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 97
+        width: 18
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab805798523c44c50800000000000000
+      internalID: 6648653515893049530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_24
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 97
+        width: 17
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7bfcaa1d9d4b630800000000000000
+      internalID: 3942015068393158624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 97
+        width: 17
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cd75687274951b0800000000000000
+      internalID: -5667420420985856990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 52
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d65066800412c8d0800000000000000
+      internalID: -2827675623548234031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 52
+        width: 15
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83cba76ffed5fef0800000000000000
+      internalID: -74908630244408434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_28
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 53
+        width: 17
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e6d6ed01e480bf0800000000000000
+      internalID: -357950336017797555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_29
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 54
+        width: 17
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b163b7504aed177b0800000000000000
+      internalID: -5228152896352471525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_30
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 55
+        width: 17
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3a0710956be9560800000000000000
+      internalID: 7322490537543508967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 54
+        width: 18
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5da5193f986e720800000000000000
+      internalID: 2875137091331347961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_32
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 53
+        width: 17
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae723d43eea7cd00800000000000000
+      internalID: 992954534134447778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_33
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 52
+        width: 15
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751592061d148acc0800000000000000
+      internalID: -3699634726367571625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_34
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 52
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5105cc2c4c7bbc00800000000000000
+      internalID: 917463615710495066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_35
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 18
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5deaed6b0017375a0800000000000000
+      internalID: -6524747187247730987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 18
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceacc95e90a308d40800000000000000
+      internalID: 5584527352120789740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18
+        width: 15
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f029fa6b59c09c020800000000000000
+      internalID: 2362433316687155727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_38
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 18
+        width: 16
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42798dc371fa7dfd0800000000000000
+      internalID: -2317190968918894812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_39
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 17
+        width: 28
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fc29dc953fe8920800000000000000
+      internalID: 2994598369274548094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_40
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 18
+        width: 29
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6915907ce06cbf00800000000000000
+      internalID: 1133887774807890284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_41
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 18
+        width: 26
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e56228ad7092cd50800000000000000
+      internalID: 6756121260375303649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_42
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 18
+        width: 26
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f17d8ee927363b0800000000000000
+      internalID: -5520442691389284555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_43
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 17
+        width: 15
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e83a99c32201430800000000000000
+      internalID: 3751536133270638217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chrctr-spritesheet_raton_44
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 18
+        width: 15
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3869dc946f2e060800000000000000
+      internalID: 6981413169219929032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b34c59e4dbec1e429f1d45387332752
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
